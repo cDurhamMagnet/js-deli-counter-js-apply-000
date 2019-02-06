@@ -20,8 +20,7 @@ const currentLine = (currentLine) => {
     for (let i = 0; i < currentLine.length; i++)    {
       string += (i + 1) + ". " + currentLine[i] + ", "
     }
-    string = string.slice(0, -1) //removing ,
-    return string.slice(0, -1)
+    return string.slice(0, -1) //removes trailing ','
   }
   else {
     return "The line is currently empty."
