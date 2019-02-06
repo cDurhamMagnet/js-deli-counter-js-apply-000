@@ -1,4 +1,5 @@
 const takeANumber = (currentLine, newCustomer) => {
+  currentLine[currentLine.length + 1] = newCustomer
   return 'Welcome, ' + newCustomer + '. You are number ' + (currentLine.length + 1) + " in line."
 }
 
