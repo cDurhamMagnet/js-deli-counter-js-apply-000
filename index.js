@@ -19,7 +19,7 @@ const currentLine = (currentLine) => {
     for (let i = 0; i < currentLine.length; i++)    {
       string += (i + 1) + ". " + currentLine[i] + ", "
     }
-    return string.substring(0, string.length - 1)
+    return string.slice(0, -1)
   }
   else {
     return "The line is currently empty."
