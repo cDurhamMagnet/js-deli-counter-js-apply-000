@@ -21,7 +21,7 @@ const currentLine = (currentLine) => {
       string += (i + 1) + ". " + currentLine[i] + ", "
     }
     string = string.slice(0, -1) //removing ,
-    return string
+    return string.slice(0, -1)
   }
   else {
     return "The line is currently empty."
