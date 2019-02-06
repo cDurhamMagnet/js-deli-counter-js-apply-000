@@ -3,10 +3,10 @@ const takeANumber = (currentLine, newCustomer) => {
 }
 
 const nowServing = (currentLine) => {
-  if (currentLine){
+  if (currentLine.length){
     let serving = currentLine[0]
     currentLine.shift()
-    return serving
+    return "Currently serving " + serving + "."
   }
   else {
     return "There is nobody waiting to be served!"
@@ -14,7 +14,7 @@ const nowServing = (currentLine) => {
 }
 
 const currentLine = (currentLine) => {
-  if (currentLine){
+  if (currentLine.length){
     let string = "The line is currently: "
     for (let i = 0; i < currentLine.length; i++)    {
       string += (i + 1) + ". " + currentLine[i] + ", "
