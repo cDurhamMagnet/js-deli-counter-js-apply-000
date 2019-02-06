@@ -1,6 +1,6 @@
 const takeANumber = (currentLine, newCustomer) => {
   currentLine[currentLine.length] = newCustomer
-  return 'Welcome, ' + newCustomer + '. You are number ' + (currentLine.length) + " in line."
+  return 'Welcome, ' + newCustomer + '. You are number ' + currentLine.length + " in line."
 }
 
 const nowServing = (currentLine) => {
@@ -21,7 +21,7 @@ const currentLine = (currentLine) => {
       string += (i + 1) + ". " + currentLine[i] + ", "
     }
     string = string.slice(0, -1) //removing ,
-    return string
+    return string.slice(0, -1)
   }
   else {
     return "The line is currently empty."
